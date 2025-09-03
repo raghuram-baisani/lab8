@@ -20,7 +20,7 @@ jobs:
           api_key: 1aO764b_4e59_p@$Sw0RdAStvdf-19ofvs4F
         run: |
           echo "Un-Masked key = $api_key"
-          echo "::add-maskmask::$api_key"
+          echo "::add-mask::$api_key"
           echo "Masked key = $api_key"
 
       - name: Create a warning Log for this message "This is a warning message."
@@ -39,3 +39,4 @@ jobs:
       - name: Create a Job Summary as "Exploring Workflow Commands :thumbsup:"
 
         run: echo "::summary::Exploring Workflow Commands :thumbsup:"
+
